@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/logosemfundo.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="./css/bulma.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>PLANET MUSIC</title>
+</head>
+
+<body>
+
+  <nav class="navbar is-black is-fixed-top">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="./">
+          <img src="./img/logosemfundo.png" alt="Logo" class="image">
+        </a>
+        <span class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="./">
+            Início
+          </a>
+          <a class="navbar-item" href="./Contato.html">
+            Contato
+          </a>
+          <a class="navbar-item" href="./Sobre.html">
+            Sobre
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="background-image1"></div>
+
+  <div class="container" style="background-color: rgb(15,15,15);">
+    <div class="section">
+      <div class="columns">
+        <div class="column has-text-centered">
+
+          <br>
+          <h1 class="title is-1 " 
+          style="text-shadow: 2px 2px 2px #00ffdd; 
+          color: rgb(237, 230, 38);">Ouça suas músicas de qualquer lugar</h1>
+          <br>
+
+        </div>
+
+
+      </div>
+      <div class="linha-horizontal">
+
+      </div>
+      <br>
+      <div class="row columns is-multiline">
+
+
+        <div v-for="card in cardData" key="card.id" class="column is-4">
+          <div class="card large">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <a href="./eletronica/">
+                  <img src="./img/categoria/Eletronica.jpg" alt="eletronica">
+                </a>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+
+                </div>
+                <div class="media-content">
+
+                  <p class="title is-4 no-padding">Eletrônica</p>
+                  <p class="subtitle is-6">Ouça as músicas mais ouvidas da semana!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div v-for="card in cardData" key="card.id" class="column is-4">
+          <div class="card large">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <a href="./gospel/">
+                  <img src="./img/categoria/Gospel.jpg" alt="gospel">
+                </a>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+
+                </div>
+                <div class="media-content">
+                  <p class="title is-4 no-padding">Gospel</p>
+                  <p class="subtitle is-6">Ouça as músicas mais ouvidas da semana!</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div v-for="card in cardData" key="card.id" class="column is-4">
+          <div class="card large">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <a href="./hip hop/">
+                  <img src="./img/categoria/Hiphop.jpeg" alt="HipHop">
+                </a>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+
+                </div>
+                <div class="media-content">
+                  <p class="title is-4 no-padding">Hip Hop</p>
+                  <p class="subtitle is-6">Ouça as músicas mais ouvidas da semana!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div v-for="card in cardData" key="card.id" class="column is-4">
+          <div class="card large">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <a href="./lofi/">
+                  <img src="./img/categoria/Lofi.jpg" alt="Lofi">
+                </a>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+
+                </div>
+                <div class="media-content">
+                  <p class="title is-4 no-padding">Lofi</p>
+                  <p class="subtitle is-6">Ouça as músicas mais ouvidas da semana!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div v-for="card in cardData" key="card.id" class="column is-4">
+          <div class="card large">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <a href="./mpb/">
+                  <img src="./img/categoria/MPB.png" alt="MPB">
+                </a>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+
+                </div>
+                <div class="media-content">
+                  <p class="title is-4 no-padding">MPB</p>
+                  <p class="subtitle is-6">Ouça as músicas mais ouvidas da semana!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div v-for="card in cardData" key="card.id" class="column is-4">
+          <div class="card large">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <a href="./pagode/">
+                  <img src="./img/categoria/Pagode.jpeg" alt="Pagode">
+                </a>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+
+                </div>
+                <div class="media-content">
+                  <p class="title is-4 no-padding">Pagode</p>
+                  <p class="subtitle is-6">Ouça as músicas mais ouvidas da semana!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div v-for="card in cardData" key="card.id" class="column is-4">
+          <div class="card large">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <a href="./pop/">
+                  <img src="./img/categoria/Pop.jpeg" alt="Pop">
+                </a>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+
+                </div>
+                <div class="media-content">
+                  <p class="title is-4 no-padding">Pop</p>
+                  <p class="subtitle is-6">Ouça as músicas mais ouvidas da semana!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div v-for="card in cardData" key="card.id" class="column is-4">
+          <div class="card large">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <a href="./rock/">
+                  <img src="./img/categoria/Rock.jpg" alt="Rock">
+                </a>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                </div>
+                <div class="media-content">
+                  <p class="title is-4 no-padding">Rock</p>
+                  <p class="subtitle is-6">Ouça as músicas mais ouvidas da semana!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div v-for="card in cardData" key="card.id" class="column is-4">
+          <div class="card large">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <a href="./samba/">
+                  <img src="./img/categoria/Samba.jpg" alt="Samba">
+                </a>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+
+                </div>
+                <div class="media-content">
+                  <p class="title is-4 no-padding">Samba</p>
+                  <p class="subtitle is-6">Ouça as músicas mais ouvidas da semana!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div v-for="card in cardData" key="card.id" class="column is-4">
+          <div class="card large">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <a href="./sertanejo/">
+                  <img src="./img/categoria/Sertanejo.webp" alt="Sertanejo">
+                </a>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+
+                </div>
+                <div class="media-content">
+                  <p class="title is-4 no-padding">Sertanejo</p>
+                  <p class="subtitle is-6">Ouça as músicas mais ouvidas dessa semana!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div v-for="card in cardData" key="card.id" class="column is-4">
+          <div class="card large">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <a href="./forro/">
+                  <img src="./img/categoria/Forro.png" alt="Forro">
+                </a>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+
+                </div>
+                <div class="media-content">
+                  <p class="title is-4 no-padding">Forró</p>
+                  <p class="subtitle is-6">Ouça as músicas mais ouvidas dessa semana!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div v-for="card in cardData" key="card.id" class="column is-4">
+          <div class="card large">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <a href="./blues-jazz/">
+                  <img src="./img/categoria/Blues&Jazz.jpg" alt="Blues&Jazz">
+                </a>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+
+                </div>
+                <div class="media-content">
+                  <p class="title is-4 no-padding">Blues & Jazz</p>
+                  <p class="subtitle is-6">Ouça as músicas mais ouvidas dessa semana!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+          <strong>PLANET MUSIC</strong> desenvolvido por Carlos Roberto, Luís Fernando e Mattheus Carvalho.
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

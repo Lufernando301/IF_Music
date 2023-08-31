@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/logosemfundo.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="./css/bulma.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>PLANET MUSIC</title>
+</head>
+
+<body>
+  <nav class="navbar is-black is-fixed-top">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="./">
+          <img src="./img/logosemfundo.png" alt="Logo">
+        </a>
+        <span class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="./">
+            Início
+          </a>
+          <a class="navbar-item" href="./Contato.html">
+            Contato
+          </a>
+          <a class="navbar-item" href="./Sobre.html">
+            Sobre
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br>
+
+
+  <div class="container">
+    <div class="section">
+      <div id="app" class="row columns" style="margin-top: 50px;">
+
+        <!-- Email -->
+        <div v-for="card in cardData" key="card.id" class="column is-4">
+          <div class="card large">
+            <div class="card-image has-text-centered">
+              <figure class="image-center is-48x48">
+                <img src="./img/email.png" alt="envelope" style="margin-top: 20px;">
+              </figure>
+            </div>
+
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+
+                </div>
+                <div class="media-content">
+                  <p class="title is-4 no-padding has-text-centered">Email</p>
+                  <p class="subtitle is-6 has-text-centered">contato@planetmusic.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Telefone -->
+
+        <div v-for="card in cardData" key="card.id" class="column is-4">
+          <div class="card large">
+            <div class="card-image has-text-centered">
+              <figure class="image-center is-48x48">
+                <img src="./img/telefone.png" alt="envelope" style="margin-top: 20px;">
+              </figure>
+            </div>
+
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+
+                </div>
+                <div class="media-content">
+                  <p class="title is-4 no-padding has-text-centered">Telefone</p>
+                  <p class="subtitle is-6 has-text-centered">0800 00 0000 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Midia Social -->
+
+        <div v-for="card in cardData" key="card.id" class="column is-4">
+          <div class="card large">
+            <div class="card-image has-text-centered">
+              <figure class="image-center is-48x48">
+                <img src="./img/instagram.png" alt="envelope" style="margin-top: 20px;">
+              </figure>
+            </div>
+
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+
+                </div>
+                <div class="media-content">
+                  <p class="title is-4 no-padding has-text-centered">Mídia Social</p>
+                  <p class="subtitle is-6 has-text-centered">@planet_music </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="form has-text-centered">
+    <form action="/html/tags/html_form_tag_action.cfm" method="post">
+
+      <div align="center">
+        <div class="text-area">
+          <textarea class="textarea is-focused has-fixed-size" placeholder="Digite seu comentário..."></textarea>
+        </div>
+      </div>
+
+    </form>
+    <div class="btt">
+      <a href="./Agradecimento.html">
+        <button class="button is-success"> Enviar</button>
+      </a>
+    </div>
+
+  </div>
+
+
+  <footer class="footer" style="background-color: rgb(194, 191, 186);">
+    <div class="container">
+      <div class="content has-text-centered" >
+        <p>
+          <strong>PLANET MUSIC</strong> desenvolvido por Carlos Roberto, Luís Fernando e Mattheus Carvalho.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

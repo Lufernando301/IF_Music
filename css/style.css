@@ -1,0 +1,78 @@
+body,
+html {
+  margin: 0;
+  color: #000;
+  height: 100%;
+  background-color: rgb(15, 15, 15);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/*------ Efeito Parallax ------*/
+.background-image1,
+.background-image2 {
+  position: relative;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.background-image1 {
+  background-image: url("../img/planetmusic.gif");
+}
+
+.background-image2 {
+  background-image: url("../img/Sobre.gif");
+}
+
+
+.in-rigth {
+  float: right;
+  padding-top: 2px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+}
+
+.in-left {
+  float: left;
+  padding-top: 2px;
+  padding-bottom: 50px;
+  padding-right: 30px;
+
+}
+
+.card {
+  color: rgb(4, 4, 4);
+  background-color: rgb(15, 15, 15);
+  box-shadow: 2px 2px rgb(255, 255, 255);
+  margin: 15px 15px;
+}
+
+.title {
+  color: rgb(209, 189, 36);
+}
+
+.subtitle {
+  color: rgb(255, 255, 255);
+}
+
+.linha-horizontal {
+  border-color: #fff;
+  border-style: solid;
+  margin-bottom: 50px;
+}
+
+.text-area {
+  width: 400px;
+  margin-bottom: 50px;
+ }
+
+.btt {
+  margin-bottom: 50px;
+}
+
+.ajuste-posicao {
+  margin-top: 50px;
+}

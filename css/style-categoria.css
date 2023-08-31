@@ -1,0 +1,87 @@
+html {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.views {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+
+.views .profile-views .container-views {
+  margin-top: 15px;
+}
+
+.views .profile-views .view:not(:first-child) {
+  margin-top: 10px;
+}
+
+.views .profile-views .view {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s linear;
+
+}
+
+.views .profile-views .view:hover {
+  opacity: 1;
+}
+
+.views .profile-views .view .img {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-right: 15px;
+
+}
+
+.views .profile-views .v1 .img {
+  background: url(./assets/view1.jpg) no-repeat;
+  background-size: 200%;
+}
+
+.views .profile-views .v2 .img {
+  background: url(./assets/view2.jpg) no-repeat;
+  background-size: 200%;
+}
+
+.views .profile-views .v3 .img {
+  background: url(./assets/view3.jpg) no-repeat;
+  background-size: 200%;
+}
+
+.views .profile-views .view .info {
+  width: 500px;
+}
+
+.view {
+  background-color: rgba(255, 255, 255, 0.845);
+  align-items: center;
+  border-radius: 15px;
+
+}
+
+body {
+  background-color: rgb(15, 15, 15);
+
+}
+
+.title {
+  color: rgb(220, 202, 44);
+}
+
+.subtitle {
+  color: rgb(240, 255, 255);
+  margin-bottom: 50px;
+}
+
+footer {
+  margin-top: 280px;
+}
